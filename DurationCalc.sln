@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurationCalc.Android", "Dur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurationCalc.iOS", "DurationCalc\DurationCalc.iOS\DurationCalc.iOS.csproj", "{8161872A-680A-4323-8631-7BD409AB2159}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurationCalc", "DurationCalc\DurationCalc\DurationCalc.csproj", "{A0BCC0CA-CF35-4149-8D7C-5AB7914E5662}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DurationCalc", "DurationCalc\DurationCalc\DurationCalc.csproj", "{A0BCC0CA-CF35-4149-8D7C-5AB7914E5662}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,7 +38,6 @@ Global
 		{F2003CC0-CEBA-4354-B22B-A772F98BAD1A}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{F2003CC0-CEBA-4354-B22B-A772F98BAD1A}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
 		{8161872A-680A-4323-8631-7BD409AB2159}.Debug|Any CPU.ActiveCfg = Debug|iPhone
-		{8161872A-680A-4323-8631-7BD409AB2159}.Debug|Any CPU.Build.0 = Debug|iPhone
 		{8161872A-680A-4323-8631-7BD409AB2159}.Debug|Any CPU.Deploy.0 = Debug|iPhone
 		{8161872A-680A-4323-8631-7BD409AB2159}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{8161872A-680A-4323-8631-7BD409AB2159}.Debug|iPhone.Build.0 = Debug|iPhone

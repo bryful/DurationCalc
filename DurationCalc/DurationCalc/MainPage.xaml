@@ -39,22 +39,22 @@
 			BackgroundColor="LightGray" TextColor="Black"
 			FontSize="14" BorderRadius="0"/>
 
-		<Label x:Name="ResultFrame" FontSize="18" BackgroundColor="#202020" Text="0(0+0)" 
+		<Label x:Name="ResultFrame" FontSize="14" BackgroundColor="#202020" Text="0(0+0)" 
 			   TextColor="White" HorizontalTextAlignment="End" VerticalTextAlignment="Center"
 			 LineBreakMode="NoWrap" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5" Padding="20,0"/>
-		<Label x:Name="ResultValue" FontSize="50" BackgroundColor="Black" Text="0+00"
+		<Label x:Name="ResultValue" FontSize="30" BackgroundColor="Black" Text="0+00"
 			 TextColor="White" HorizontalTextAlignment="End" VerticalTextAlignment="Center"
 			 LineBreakMode="NoWrap" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" Padding="20,0"/>
 
-		<Label x:Name="InputFrame" FontSize="18" BackgroundColor="#202020" Text="0(0+0)"
+		<Label x:Name="InputFrame" FontSize="14" BackgroundColor="#202020" Text="0(0+0)"
 			 TextColor="White" HorizontalTextAlignment="End" VerticalTextAlignment="Center"
 			 LineBreakMode="NoWrap" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="5" Padding="20,0"/>
 
-		<Label x:Name="InputValue" FontSize="50" BackgroundColor="Black" Text="-0+00"
+		<Label x:Name="InputValue" FontSize="30" BackgroundColor="Black" Text="-0+00"
 			 TextColor="White" HorizontalTextAlignment="End" VerticalTextAlignment="Center"
 			 LineBreakMode="NoWrap" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="4" Padding="20,0"/>
 
-		<Label x:Name="CalcMode" FontSize="36" BackgroundColor="Black" Text="×"
+		<Label x:Name="CalcMode" FontSize="15" BackgroundColor="Black" Text="×"
 			 TextColor="Red" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
 			 LineBreakMode="NoWrap" Grid.Row="4" Grid.Column="0" Padding="20,0"/>
 
@@ -97,10 +97,10 @@
 
 
 
-		<local:CalcBtn Text="c" Grid.Row="7" Grid.Column="0"   Margin="1"
+		<local:CalcBtn x:Name="clear" Text="C" Grid.Row="7" Grid.Column="0"   Margin="1"
 			  BackgroundColor="DarkGray" TextColor="White"
 			  FontSize="24" BorderRadius="0"  />
-		<local:CalcBtn x:Name="k01"  Text="1" Grid.Row="7" Grid.Column="1"  Margin="1"
+		<local:CalcBtn  x:Name="k01" Text ="1"  Grid.Row="7" Grid.Column="1"  Margin="1"
 			  BackgroundColor="White" TextColor="Black"
 			  FontSize="24" BorderRadius="0"   />
 		<local:CalcBtn x:Name="k02"  Text="2" Grid.Row="7" Grid.Column="2"  Margin="1"
@@ -114,17 +114,17 @@
 			  FontSize="24" BorderRadius="0"   />
 
 		<local:CalcBtn  x:Name="mult" Text="×" Grid.Row="8" Grid.Column="0" Margin="1"
-			  BackgroundColor="DarkGray" TextColor="White"
+			  BackgroundColor="Gray" TextColor="White"
 			  FontSize="24" BorderRadius="0"  />
 		<local:CalcBtn  x:Name="k00" Text="0" Grid.Row="8" Grid.Column="1"   Margin="1"
 			  BackgroundColor="#D0D0D0" TextColor="Black"
 			  FontSize="24" BorderRadius="0"   />
 		<local:CalcBtn  x:Name="sec" Text="Sec" Grid.Row="8" Grid.Column="2"  Grid.ColumnSpan="2"
-			  BackgroundColor="#F0A0A0"  TextColor="Black" Margin="1"
+			  BackgroundColor="#F0C0C0"  TextColor="Black" Margin="1"
 			  FontSize="24" BorderRadius="0"  />
 
 		<local:CalcBtn x:Name="div" Text="÷" Grid.Row="9" Grid.Column="0" Margin="1"
-			  BackgroundColor="DarkGray" TextColor="White"
+			  BackgroundColor="Gray" TextColor="White"
 			  FontSize="24" BorderRadius="0" />
 		<local:CalcBtn x:Name="kex0" Text="12" Grid.Row="9" Grid.Column="1"  Margin="1"
 			  BackgroundColor="White" TextColor="Black"

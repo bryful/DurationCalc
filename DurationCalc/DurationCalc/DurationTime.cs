@@ -191,7 +191,10 @@ namespace BRY
 		{
 			get
 			{
-				return string.Format("{0}", (int)(m_Time * m_Fps *m_IsPlus + 0.5));
+				int sec = (int)m_Time;
+				int koma = (int)((m_Time - (double)sec) * m_Fps + 0.5);
+				int frm = (int)(m_Time * m_Fps * m_IsPlus + 0.5);
+				return string.Format("{0} ({1}+{2})", frm,sec,koma);
 			}
 		}
 		private int[] m_Ex_tbl = new int[3];
@@ -325,7 +328,10 @@ namespace BRY
 					}
 					else
 					{
-						m_LineSec += c;
+						if ( (m_LineSec.Length + c.Length) < 5)
+						{
+							m_LineSec += c;
+						}
 					}
 				}
 				else
@@ -336,7 +342,10 @@ namespace BRY
 					}
 					else
 					{
-						m_LineKoma += c;
+						if ((m_LineKoma.Length + c.Length) < 5)
+						{
+							m_LineKoma += c;
+						}
 					}
 				}
 				ToTime();
